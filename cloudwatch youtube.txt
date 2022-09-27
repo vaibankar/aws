@@ -1,0 +1,63 @@
+WHAT IS CLOUDWATCH :-
+amazon cloudwatch is a monitoring service to monitor your AWS resources. as well as
+the application that you run on AWS cloudwatch can monitor like.
+1. compute 
+   a) EC2 instances
+   b) auto scaling group 
+   c) elastic load balancer 
+   d) routeS3 health checks
+
+2. storage & contents delivery 
+    a) EBS volumes
+    b) storage gateways
+    c) cloudfront 
+
+
+3. host level matrics consist of.
+    a) CPU
+    b) network 
+    c) Disk 
+    d) status check
+    
+
+
+WHAT IS AWS CLOUDTRAIL ?
+AWS cloudtrail increases visibility into your user and resources activity by recording 
+AWS managment console actions and API calls. you can identify which users and 
+accounts called AWS. the sources IP address from which the calls were made, and 
+when the calls occured.
+
+
+
+DIFFERENCE BETWEEN CLOUDWATCH AND CLOUDTRAIL ?
+cloudwatch monitor performance  ( it give info about hardware usage)
+cloudtrail monitors API calls in the AWS platform.  ( it gives info about which activity
+ perform by which user.) 
+
+
+CLOUDWATCH PRACTICAL STEPS :- 
+
+1) cloudwatch 
+2) select service (EC2)
+3) launch instance ( enable the cloudwatch instance during launch the instance. this
+   part is available in configure instances.)  for monitoring.
+4) select instance and click monitoring ( there is available the utilization)
+    to create alert. :-
+ 5) alarm 
+6) in alarm
+7) create alarm
+8) select matric 
+9) treashold value in %
+10) create new topic give name
+11) enter email ID
+12) create existing topic for for senf mail id
+13) view  SNS console ( if there is status is pending confirmation then that confirmsation
+send to your mail id you need to confirm from your maill  for send alert to your mail
+14)  go to cloudwatch and click next
+15) give alarm name 
+16) create alarm
+17 ) go to instances and click monitoring
+18) on instance and run cript for load and it will give massage on mail to you
+
+script to create load in instance :- while true: do echo: done
+
